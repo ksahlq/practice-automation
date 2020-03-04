@@ -1,0 +1,5 @@
+{
+    "baseUrl": "http://automationpractice.com",
+    "video": true,
+    "chromeWebSecurity": false
+}

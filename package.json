@@ -1,0 +1,16 @@
+{
+  "name": "automation-practice",
+  "version": "1.0.0",
+  "description": "This is an example of testing automationpractice.com site with Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:dev": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.1.0"
+  }
+}
