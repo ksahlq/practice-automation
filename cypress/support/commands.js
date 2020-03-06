@@ -23,3 +23,24 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("getCreateAccountCookies", () => {
+    cy.getCreateAccountToken()
+    cy.getCookies()
+    .should('have.length', 1)
+    .then((cookies) => {
+        expect(cookies[0]).to.have.property('name', 'PrestaShop-a30a9934ef476d11b6cc3c983616e364')
+    })
+
+})
+
+Cypress.Commands.add("getCreateAccountToken", () => {
+    return cy
+    .request({
+        method: 'POST',
+        url: 'http://automationpractice.com/index.php',
+        followRedirect: true,
+        form: true, 
+        body: "controller=authentication&SubmitCreate=1&ajax=true&email_create=hi.no%40input.input&back=my-account&token=ce65cefcbafad255f0866d3b32d32058"        
+    })
+})
