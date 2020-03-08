@@ -1,0 +1,45 @@
+// This is just showing how the Form Data for API requests are structured
+
+// Login
+// POST '/index.php?controller=authentication'
+body: {
+    email: 'funtimes@funtimes.com', 
+    passwd: '12345',
+    back: 'my-account',
+    SubmitLogin: '' 
+
+    email: 'sadtimes@sadtimes.com',
+    passwd: '12345',
+    back: 'my-account',
+    SubmitLogin: '' 
+}
+
+// createAccount
+// POST /index.php?controller=authentication
+body: {
+    customer_firstname: 'Fun',
+    customer_lastname: 'Times',
+    email: 'funtimes@funtimes.com',
+    passwd: '12345',
+    days: '', 
+    months: '',
+    years: '',
+    firstname: 'Fun',
+    lastname: 'Times',
+    company: '',
+    address1: 'rty 55',
+    address2: '',
+    city: 'LA',
+    id_state: '5',
+    postcode: '89012',
+    id_country: '21',
+    other: '',
+    phone: '',
+    phone_mobile: '55552222',
+    alias: 'Waterbloom 65',
+    dni: '',
+    email_create: '1',
+    is_new_customer: '1',
+    back: 'my-account', 
+    submitAccount: ''
+}
